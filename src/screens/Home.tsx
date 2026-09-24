@@ -10,7 +10,7 @@ import { Usuario } from "../types/usuario";
 import { ConsultaCard } from "../components";
 import { styles } from "../styles/app.styles";
 import { obterConsultas, salvarConsultas } from "../services/storage";
-import { consultasDoUsuario } from "../utils/consultasDoUsuario";
+
 
 type HomeProps = {
   usuario: Usuario;
@@ -106,4 +106,8 @@ export default function Home({ usuario, onSair, navigation }: HomeProps) {
       </ScrollView>
     </View>
   );
+}
+
+function consultasDoUsuario(todas: Consulta[], usuario: Usuario): React.SetStateAction<Consulta[]> {
+  throw new Error("Function not implemented.");
 }
