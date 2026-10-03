@@ -3,9 +3,13 @@
 
 import React from "react";
 import { Pressable, Text, View } from "react-native";
-
+import {
+  dataEstaNaJanela,
+  formatarDataBR,
+  mesmaDataCivil,
+  mesesDaJanela,
+} from "../utils/dataConsulta";
 import { styles } from "../styles/seletorData.styles";
-import { dataEstaNaJanela, formatarDataBR, mesesDaJanela, mesmaDataCivil } from "../utils/consultasDoUsuario";
 
 type SeletorDataProps = {
   selecionada: Date | null;

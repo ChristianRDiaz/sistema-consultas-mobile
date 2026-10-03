@@ -9,6 +9,7 @@ import { Medico } from "../interfaces/medico";
 import { Especialidade } from "../types/especialidade";
 import { Usuario } from "../types/usuario";
 import { montarConsulta } from "../utils/montarConsulta";
+import { validarDataAgenda } from "../utils/dataConsulta";
 import {
   obterConsultas,
   obterEspecialidades,
@@ -16,7 +17,6 @@ import {
   salvarConsultas,
 } from "../services/storage";
 import { styles } from "../styles/agendar.styles";
-import { validarDataAgenda } from "../utils/consultasDoUsuario";
 
 type AgendarProps = {
   usuario: Usuario;
